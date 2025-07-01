@@ -1,0 +1,39 @@
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+
+
+table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+tr {
+    display: flex;
+    border: 1px solid black;
+}
+
+.allButton{
+    margin: 0;
+    font-size: large;
+    color: black;
+    background-color: whitesmoke;
+}
+.selection{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.searchbar{
+    border: 1px solid black;
+}
+

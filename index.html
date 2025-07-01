@@ -5,32 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                <th>
+                    <img class="logo" src="logoShop.png">
+                </th>
+
+                <th>
+                    <img src="" alt="">
+                    Update Location
+                </th>
+
+                <th class="searchbar" style="flex: 3;">
+                    <label for="searchbar">Search</label>
+                    <input 
+                    type="text" 
+                    id="searchbar"
+                    placeholder="Search Products">
+                </th>
+
+                <th style="flex: 2;">Col 3 </th>
+                </tr>
+            </thead>     
+        </table>
+        <table>
+                <div>
+                    <img src="" class="burgerMenu">
+                    <button class="allButton">All</button>
+                </div>
+                <button class="selection">Electronics</button>
+                <button class="selection">Home & Kitchen</button>
+                <button class="selection">Bestsellers</button>
+                <button class="selection">Customer Service</button>
+                <button class="selection">Computers</button>
+                <button class="selection">Fashion</button>   
+        </table>
+    </div>
     <header>
-        <h1>My E-Commerce Store</h1>
-        <nav>
+        <h1>READY TO BUY</h1>
+        <div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Cart</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Helpline</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     
     <section class="products">
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>$10.00</p>
-            <button class="add-to-cart" data-name="Product 1" data-price="10">Add to Cart</button>
+        <div>
+            <button class="kids">Kids</button>
         </div>
-        <div class="product">
-            <img src="product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>$15.00</p>
-            <button class="add-to-cart" data-name="Product 2" data-price="15">Add to Cart</button>
+        <div>
+            <button class="men">Men</button>
+        </div>
+        <div>
+            <button class="women">Women</button>
         </div>
     </section>
     

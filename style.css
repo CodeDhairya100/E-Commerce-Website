@@ -5,50 +5,82 @@ body {
     background-color: #f8f8f8;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li {
+div ul li {
     display: inline;
     margin: 0 15px;
 }
-
-nav ul li a {
-    color: white;
+div ul li a {
+    color: rgb(154, 154, 154);
     text-decoration: none;
     font-size: 1.2rem;
+    
+}
+
+
+
+div ul li a:hover{
+    transition: 3s;
+    text-decoration: underline
 }
 
 .products {
     display: flex;
     justify-content: center;
     margin: 20px;
-    gap: 20px;
+    gap: 30px;
 }
 
-.product {
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+.kids{
+    background-color: rgb(151, 151, 151);
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
     width: 200px;
+    height: 200px;
+}
+.kids:hover {
+    transition: 150ms;
+    transform: scale(1.05);
+    outline: 3px solid rgb(55, 186, 230);
+    background-color: #00ffd5;
+    box-shadow:0px 0px 20px 10px rgb(0, 161, 214);
+}
+.men{
+    background-color: rgb(151, 151, 151);
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.men:hover {
+    transition: 150ms;
+    transform: scale(1.05);
+    outline: 3px solid rgba(51, 220, 0, 0.906);
+    background-color: #c3ff00;
+    box-shadow:0px 0px 20px 10px rgb(50, 214, 0);
+}
+.women{
+    background-color: rgb(151, 151, 151);
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.women:hover {
+    transition: 150ms;
+    transform: scale(1.05);
+    outline: 3px solid rgb(250, 0, 104);
+    background-color: #ff9be4;
+    box-shadow:0px 0px 20px 10px rgb(222, 0, 70);
 }
 
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+
+
 
 button {
     background-color: #28a745;
@@ -60,9 +92,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #218838;
-}
+
 
 .cart {
     background-color: white;
