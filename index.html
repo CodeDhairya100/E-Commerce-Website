@@ -8,45 +8,68 @@
     <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                <th>
-                    <img class="logo" src="logoShop.png">
-                </th>
+    <div class="header">
 
-                <th>
-                    <img src="" alt="">
-                    Update Location
-                </th>
+        <div>
+            <img  class="logo" src="logoShop.png">
+        </div>
 
-                <th class="searchbar" style="flex: 3;">
-                    <label for="searchbar">Search</label>
-                    <input 
-                    type="text" 
-                    id="searchbar"
-                    placeholder="Search Products">
-                </th>
+        <div class="Location">
+            <button  class="locationButton" >
+                <img class="locationPicture" src="pointerlocation.png">
+                <div style="color: rgb(254, 254, 254);"> Location </div>
+            </button>
+        </div>
 
-                <th style="flex: 2;">Col 3 </th>
-                </tr>
-            </thead>     
-        </table>
-        <table>
-                <div>
-                    <img src="" class="burgerMenu">
-                    <button class="allButton">All</button>
-                </div>
-                <button class="selection">Electronics</button>
-                <button class="selection">Home & Kitchen</button>
-                <button class="selection">Bestsellers</button>
-                <button class="selection">Customer Service</button>
-                <button class="selection">Computers</button>
-                <button class="selection">Fashion</button>   
-        </table>
+        <div class="search">
+            <label class="searchText for="placeholder">Search</label>
+            <input class="searchBar" type="text" placeholder=" Search Products">
+        </div>
+
+        <div class="account">
+            <button class="accountButton">
+                <img  class="accountPicture" src="human.png">
+                <div style="color: black;">Account</div>
+            </button>
+        </div>
+
+        <div class="developerSection">
+            <h3 class="developerText">Developer's Details</h3>
+            <div class="socialsDiv">
+            <button class="instaButton">
+                <img class="Image" src="instagram.png">
+            </button>
+            <button class="xButton">
+                <img class="Image" src="x.png">
+            </button>
+            <button class="linkedinButton">
+                <img class="Image" src="linkedin.png">
+            </button>
+            <button class="githubButton">
+                <img class="Image" src="github.png">
+            </button>
+            </div>
+        </div>
+
+        <div class="rightCart">
+            <button class="cartButton">
+                <img class="cartImage" src="cart.png">
+            </button>
+        </div>
+
     </div>
-    <header>
+    <div>
+        <button class="allButton">
+            <img src="" class="burgerMenu"> All</button>
+        <button class="selection">Electronics</button>
+        <button class="selection">Home & Kitchen</button>
+        <button class="selection">Bestsellers</button>
+        <button class="selection">Customer Service</button>
+        <button class="selection">Computers</button>
+        <button class="selection">Fashion</button>
+    </div>
+                   
+     <header>
         <h1>READY TO BUY</h1>
         <div>
             <ul>
@@ -56,9 +79,9 @@
                 <li><a href="#">Helpline</a></li>
             </ul>
         </div>
-    </header>
+     </header>
     
-    <section class="products">
+     <section class="products">
         <div>
             <button class="kids">Kids</button>
         </div>
@@ -68,12 +91,13 @@
         <div>
             <button class="women">Women</button>
         </div>
-    </section>
+     </section>
     
-    <section class="cart">
+     <section class="cart">
         <h2>Shopping Cart</h2>
         <ul id="cart-items"></ul>
         <p>Total: $<span id="cart-total">0.00</span></p>
-    </section>
+     </section>
+    </div>
 </body>
 </html>
