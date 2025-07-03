@@ -1,0 +1,86 @@
+
+.header2{
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;  
+}
+.header2::-webkit-scrollbar{
+    display: none;
+}
+.header2-wrapper{
+  display: flex;
+  align-items: center;
+  background: rgb(255, 236, 114);
+  padding: 5px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* This is the all Button */
+.allButton{
+  background-color: black;
+  border: 5px solid grey;
+  margin-left: 5px;
+  margin-right: 5px;
+  white-space: nowrap;
+  border-radius: 10px;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+}
+.allButtonIcon{
+  width: 30px;
+  object-fit: contain;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.allWord{
+  font-size: large;
+}
+.allButton:hover{
+  opacity: 0.7;
+}
+.allButton:active{
+  opacity: 1;
+}
+
+
+/* This is the buttons */
+.itemsButton{
+  background-color: black;
+  border: 5px solid grey;
+  margin-left: 10px;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+.itemsButton:hover{
+  transition: 0.2s;
+  background-color: rgb(66, 66, 66);
+  border: 5px solid rgb(199, 199, 199);
+}
+.itemsButton:active{
+  transition: 0s;
+  background-color: rgb(0, 0, 0);
+  border: 5px solid grey;
+}
+
+/* These are the scroll arrows */
+.arrow {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+

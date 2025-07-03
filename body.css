@@ -5,40 +5,46 @@ body {
     background-color: #f8f8f8;
 }
 
-header {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
+.header3 {
+    position: relative;
+    background-image: url('banner.jpg');  /* To add image to the background */
+    background-position: center;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.621);
     text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;  
+    overflow: hidden;
+}
+.header3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.83); /* transparent black overlay */
+  z-index: 0;
+}
+.header3 span {
+  position: relative;
+  z-index: 1;
 }
 
-
-div ul li {
-    display: inline;
-    margin: 0 15px;
+/* This is the Main Body Section */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
-div ul li a {
-    color: rgb(154, 154, 154);
-    text-decoration: none;
-    font-size: 1.2rem;
-    
-}
-
-
-
-div ul li a:hover{
-    transition: 3s;
-    text-decoration: underline
-}
-
-.products {
+.kidsMenWomenDiv {
     display: flex;
     justify-content: center;
     margin: 20px;
     gap: 30px;
 }
-
-
 .kids{
     background-color: rgb(151, 151, 151);
     color: black;
@@ -88,23 +94,4 @@ div ul li a:hover{
 
 
 
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-
-
-.cart {
-    background-color: white;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
