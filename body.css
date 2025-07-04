@@ -7,7 +7,7 @@ body {
 
 .header3 {
     position: relative;
-    background-image: url('banner.jpg');  /* To add image to the background */
+    background-image: url('picturesWebsite/banner.jpg');  /* To add image to the background */
     background-position: center;
     background-size: cover;
     color: rgba(255, 255, 255, 0.621);
@@ -16,6 +16,9 @@ body {
     font-size: 30px;
     font-weight: bold;  
     overflow: hidden;
+}
+.header3:hover{
+    color: white;
 }
 .header3::before {
   content: "";
