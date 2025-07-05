@@ -9,7 +9,7 @@
 .itemCard{
     outline:2px solid black;
     width: 15.4rem;
-    height: 20rem;
+    height: 20.5rem;
     background-color: rgb(176, 175, 175);
     border-radius: 10px;
     display: flex;
@@ -49,6 +49,8 @@
     border-radius: 5px;
     background-color: white;
     outline:1px solid grey;
+    color: black;
+    padding: 0;
 }
 .addToCart:hover{
     transition: 0.3s;
@@ -67,6 +69,7 @@
 }
 
 .qty-btn {
+    color: black;
     font-size: 18px;
     width: 18px;
     height: 18px;
