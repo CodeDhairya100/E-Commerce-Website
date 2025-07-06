@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-image:url(picturesCards/bg_6.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px);
 }
 
 .header3 {
@@ -10,7 +14,7 @@ body {
     background-image: url('picturesWebsite/banner.jpg');  /* To add image to the background */
     background-position: center;
     background-size: cover;
-    color: rgba(255, 255, 255, 0.621);
+    color: rgba(255, 255, 255, 0.517);
     text-align: center;
     padding: 20px;
     font-size: 30px;
