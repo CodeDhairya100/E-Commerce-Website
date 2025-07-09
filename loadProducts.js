@@ -1,6 +1,9 @@
 document.querySelectorAll(".itemsButton").forEach(button => {
     button.addEventListener("click", () => {
-        const category = button.textContent.trim().toLowerCase(); // e.g. "electronics"
+        const category = button.textContent
+        .trim()                         //this line trims out any white spaces
+        .toLowerCase()                  //this line lower case the words to read
+        .replace(/[^a-z0-9]/g, '-');    //this line replaces the spaces and & with '-'
         const fileToLoad = `${category}.html`;
 
         fetch(fileToLoad)

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="header.css">
@@ -10,7 +8,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="card.css">
 </head>
-<body>
+<body style="padding-top: 122px; margin: 0;">
     <div class="header">
 
         <div>
@@ -18,7 +16,7 @@
         </div>
 
         <div class="Location">
-            <button  class="locationButton">
+            <button  class="locationButton" >
                 <img class="locationPicture" src="picturesWebsite/pointerlocation.png">
                 <div style="color: rgb(254, 254, 254);"> Location </div>
             </button>
@@ -59,9 +57,10 @@
                 <img class="cartImage" src="picturesWebsite/cart.png">
             </button>
         </div>
- 
+
     </div>
-    <div class="header2-wrapper">
+    <div>
+            <div class="header2-wrapper">
         <button class="allButton">
             <img class="allButtonIcon" src="picturesWebsite/bars.png" >
             <div class="allWord">All</div>
@@ -69,42 +68,46 @@
         <button id="left-arrow" class="arrow">◀</button>
         <div class="header2">
             <button class="itemsButton">Electronics</button>
-            <button class="itemsButton">Home & Kitchen</button>
+            <button class="itemsButton">Kitchen</button>
             <button class="itemsButton">Bestsellers</button>
-            <button class="itemsButton">Clothing & Accessories</button>
             <button class="itemsButton">Computers</button>
-            <button class="itemsButton">Health & Beauty Products</button>
-            <button class="itemsButton">Toys & Games</button>
-            <button class="itemsButton">Furniture</button>
+            <button class="itemsButton">Fashion & Clothing</button>
+            <button class="itemsButton">Accessories</button>
+            <button class="itemsButton">Beauty Products</button>
             <button class="itemsButton">Groceries</button>
+            <button class="itemsButton">Furniture</button>
+            <button class="itemsButton">Toys & Games</button>
+            <button class="itemsButton">Pharmacy</button>
+            <button class="itemsButton">Health & Household</button>
+            <button class="itemsButton">Gifting</button>
             <button class="itemsButton">Books</button>
-            <button class="itemsButton">Fashion</button>
-            <button class="itemsButton">Fashion</button>
-            <button class="itemsButton">Fashion</button>
-            <button class="itemsButton">Fashion</button>
-            <button class="itemsButton">Fashion</button>
         </div>
         <button id="right-arrow" class="arrow">▶</button>
     </div>
 
-    <div class="header3">
-        <span>READY TO BUY</span>
+
+
+    <div id="productDisplayArea">
+
+        <div class="header3">
+            <span>READY TO BUY</span>
+        </div>
+        <section class="kidsMenWomenDiv">
+            <div>
+                <button class="kids">Kids</button>
+            </div>
+            <div>
+                <button class="men">Men</button>
+            </div>
+            <div>
+                <button class="women">Women</button>
+            </div>
+        </section>
+    </div>
     </div>
 
-    <div id="productDisplayArea"></div>
 
 
-     <section class="kidsMenWomenDiv">
-        <div>
-            <button class="kids">Kids</button>
-        </div>
-        <div>
-            <button class="men">Men</button>
-        </div>
-        <div>
-            <button class="women">Women</button>
-        </div>
-     </section>
     
     <footer>
 
@@ -169,6 +172,5 @@
     <script src="header2Script.js"></script>
     <script src="loadProducts.js"></script>
     <script src="cardScript.js"></script>
-
 </body>
 </html>

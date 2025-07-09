@@ -1,21 +1,25 @@
 
+.header2-wrapper{
+  display: flex;
+  align-items: center;
+  background: rgba(255, 236, 114, 0.849);
+  padding-bottom: 10px;
+  overflow: hidden;
+  position: fixed;
+  margin: 0;
+  margin-top: -7px;
+  width: 100%;
+  z-index: 9997;
+}
 .header2{
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;  
+  width: 100%;
 }
 .header2::-webkit-scrollbar{
     display: none;
-}
-.header2-wrapper{
-  display: flex;
-  align-items: center;
-  background: rgb(255, 236, 114);
-  padding: 5px;
-  padding-bottom: 15px;
-  overflow: hidden;
-  margin: 0;
 }
 
 /* This is the all Button */

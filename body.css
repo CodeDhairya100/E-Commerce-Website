@@ -1,22 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image:url(picturesCards/bg_6.jpeg);
+body{
+    background-image: url(picturesWebsite/background1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: blur(10px);
 }
 
 .header3 {
     position: relative;
-    background-image: url('picturesWebsite/banner.jpg');  /* To add image to the background */
     background-position: center;
     background-size: cover;
     color: rgba(255, 255, 255, 0.517);
     text-align: center;
     padding: 20px;
+    padding-top: 100px;
     font-size: 30px;
     font-weight: bold;  
     overflow: hidden;
@@ -28,7 +24,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.83); /* transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.672); /* transparent black overlay */
   z-index: 0;
 }
 .header3 span {
@@ -49,11 +45,12 @@ button {
 .kidsMenWomenDiv {
     display: flex;
     justify-content: center;
-    margin: 20px;
     gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .kids{
-    background-color: rgb(151, 151, 151);
+    background-color: rgba(255, 255, 255, 0.398);
     color: black;
     font-size: 30px;
     border-radius: 50%;
@@ -64,11 +61,11 @@ button {
     transition: 150ms;
     transform: scale(1.05);
     outline: 3px solid rgb(55, 186, 230);
-    background-color: #00ffd5;
+    background-color: #00ffd5b1;
     box-shadow:0px 0px 20px 10px rgb(0, 161, 214);
 }
 .men{
-    background-color: rgb(151, 151, 151);
+    background-color: rgba(255, 255, 255, 0.398);
     color: black;
     font-size: 30px;
     border-radius: 50%;
@@ -79,11 +76,11 @@ button {
     transition: 150ms;
     transform: scale(1.05);
     outline: 3px solid rgba(51, 220, 0, 0.906);
-    background-color: #c3ff00;
+    background-color: #c3ff00a7;
     box-shadow:0px 0px 20px 10px rgb(50, 214, 0);
 }
 .women{
-    background-color: rgb(151, 151, 151);
+    background-color: rgba(255, 255, 255, 0.398);
     color: black;
     font-size: 30px;
     border-radius: 50%;
@@ -94,7 +91,7 @@ button {
     transition: 150ms;
     transform: scale(1.05);
     outline: 3px solid rgb(250, 0, 104);
-    background-color: #ff9be4;
+    background-color: #ff9be4a5;
     box-shadow:0px 0px 20px 10px rgb(222, 0, 70);
 }
 
