@@ -6,7 +6,6 @@
     gap: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 90px;
     padding-bottom: 40px;
     justify-content:space-around; /*   This makes the distance between and around    */
 }                                 /*         the cards evenly distributed.         */
@@ -16,9 +15,9 @@
     height: 20.5rem;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(2px);                 /* For Safari */
-    background-color: rgba(255, 255, 255, 0.345);     /* Translucent background */
+    background-color: rgba(255, 243, 110, 0.32);     /* Translucent background */
     border-radius: 10px;
-    outline: 2px solid rgba(0, 0, 0, 0.06);
+    outline: 2px solid rgba(74, 68, 20, 0.06);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +26,11 @@
 }
 .itemCard:hover{
     transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 25px 5px rgba(0, 0, 0, 0.33);
 }
 .itemImg{
-    outline: 1px solid rgb(137, 137, 137);
+    outline: 1px solid rgba(249, 255, 143, 0.36);
     min-width: 230px;
     max-width:250px;
     height: 150px;
@@ -38,6 +39,8 @@
     border-radius: 10px;
 }
 .itemCard h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
     margin: 0;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -56,7 +59,7 @@
     font-size: medium;
     font-weight: bolder;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.705);
     outline:1px solid grey;
     color: black;
     padding: 0;
@@ -85,7 +88,7 @@
     height: 18px;
     border-radius: 2px;
     border: none;
-    background-color: rgb(247, 255, 139);
+    background-color: rgba(238, 255, 0, 0.716);
     font-weight: bold;
     cursor: pointer;
     padding: 0;
