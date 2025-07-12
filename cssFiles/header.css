@@ -1,0 +1,216 @@
+
+/* This the the background in which all the top header elements are present */
+.header {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid rgb(111, 111, 111);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* This is the website logo */
+
+.logo{                   
+    width: 150px;
+    padding-top: 10px;
+    margin-top: -25px;
+    margin-bottom: -35px;    
+} 
+
+
+/* This is the location logo Button */
+.Location{
+    padding: 10px;
+}
+.locationButton{
+    background-color: transparent;
+}
+.locationButton:hover {
+    transition: 0.25s;
+    outline: 1px solid white;
+    box-shadow: inset 0 0 5px 2px white;
+}
+.locationButton:active {
+    background-color: rgb(171, 171, 171);
+}
+.locationPicture{
+    width: 40px;
+}
+
+
+
+/* This is the SearchBar */
+.search{
+    padding: 10px;
+    width: 2000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchText{
+    background-color: rgba(255, 242, 0, 0.838);
+    color: rgb(26, 26, 26);
+    font-size: 18.9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 0;
+    margin-left: 2rem;
+    outline: 3px solid rgb(255, 237, 122, 0.882);
+    flex: 2;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.searchBar{
+    outline: 3px solid rgba(255, 237, 122, 0.882);
+    height: 37px;
+    width: 100%;                /* For responsive designs use percentage */
+    max-width: 2000px;
+    min-width: 200px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+}
+
+/* This is the Accounts button */
+.account{
+    padding: 10px;
+    margin-left: 20px;
+
+}
+.accountButton{
+    background-color: rgba(255, 255, 255, 0.798);
+}
+.accountButton:hover{
+    transition: 0.2s;
+    opacity: 0.6;
+}
+.accountButton:active{
+    transition: 0ms;
+    background-color: rgba(151, 226, 255, 0.777);
+}
+.accountPicture{
+    width: 40px;
+}
+
+
+/* This is the go to cart button */
+.rightCart{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.cartButton{
+    background-color: transparent;
+}
+.cartImage{
+    width: 100px;
+}
+.cartImage:hover{
+    opacity: 0.6;
+}
+.cartImage:active{
+    opacity: 0.85;
+}
+
+
+/* This is the developer section */
+
+
+.devButton{
+    color: rgba(255, 255, 103, 0.918);
+    font-size:x-large;
+    padding: 0;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    margin-left: 20px;
+    margin-bottom: -5px;
+    width: 230px;
+    min-width: 135px;
+    transition: 0.4s ease;
+}
+.devButton:hover{
+    outline: 1px solid white;
+    box-shadow: 2px 2px 20px 2px rgba(255, 255, 255, 0.792);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.414);
+}
+.devButton:active{
+    transition: 0s;
+    color: white;
+    background-color:transparent ;
+}
+
+.socialsDiv{
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.Image{
+    width: 37px;
+}
+
+.instaButton{
+    padding: 0;
+    background-color: transparent;
+}
+.instaButton:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    box-shadow: 0 4px 6px rgba(252, 154, 255, 0.792);
+}
+.instaButton:active{
+    transition: 0ms;
+    opacity: 0.5;
+}
+
+.xButton{
+    padding: 0;
+    background-color: transparent;
+}
+.xButton:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    box-shadow: 0 4px 6px rgba(239, 255, 116, 0.792);
+}
+.xButton:active{
+    transition: 0ms;
+    opacity: 0.5;
+}
+
+.linkedinButton{
+    padding: 0;
+    background-color: transparent;
+}
+.linkedinButton:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    box-shadow: 0 4px 6px rgba(128, 168, 255, 0.792);
+}
+.linkedinButton:active{
+    transition: 0ms;
+    opacity: 0.5;
+}
+
+.githubButton{
+    padding: 0;
+    background-color: transparent;
+}
+.githubButton:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    box-shadow: 0 4px 6px rgba(255, 110, 110, 0.792);
+}
+.githubButton:active{
+    transition: 0ms;
+    opacity: 0.5;
+}
+

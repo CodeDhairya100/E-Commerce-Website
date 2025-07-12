@@ -1,19 +1,34 @@
 /* Width of Scrollbar */
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 14px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(#2c2c2c, #1f1f1f);
+    box-shadow: inset 0 0 6px hsl(0, 0%, 0%);
+    background: #343434;
 }
 /* Track (background) */
 ::-webkit-scrollbar-track {
-  background: #343434;
-
 }
 /* Handle (thumb) */
 ::-webkit-scrollbar-thumb {
-  background: #ffe100;
+  background: linear-gradient(to bottom, #ffe100, #ffe100);
   border-radius: 10px;
   border: 4px solid transparent;
   background-clip: content-box;
 }
+/* Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ffe100, #ff5100);
+    cursor: pointer;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+
+
 
 /* This is the background of the product display area */
 body{

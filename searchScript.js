@@ -2,7 +2,7 @@ const searchInput = document.querySelector('input.searchBar'); // tumhare input 
 const productDisplayArea = document.getElementById('productDisplayArea'); // product cards ka display area
 
 
-const categoryFiles = ["accessories","beauty-products","bestseller","computers",
+const categoryFiles = ["paintings","beauty-products","bestseller","computers",
                        "electronics","fashion---clothing","furniture","gifting",
                        "groceries","kitchen", "books","pharmacy"];
 
@@ -18,7 +18,7 @@ searchInput.addEventListener('input', async function () {
 
   for (const file of categoryFiles) {
     try {
-      const res = await fetch(`${file}.html`);
+      const res = await fetch(`categoryFiles/${file}.html`);
       const html = await res.text();
 
       const parser = new DOMParser();
