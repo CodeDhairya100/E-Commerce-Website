@@ -15,11 +15,15 @@
 /* This is the website logo */
 
 .logo{                   
-    width: 150px;
-    padding-top: 10px;
+    width: 155px;
+    padding-top: 7px;
     margin-top: -25px;
-    margin-bottom: -35px;    
+    margin-bottom: -35px;
+    transition: 0.3s ease;    
 } 
+.logo:hover{
+    opacity: 0.7;
+}
 
 
 /* This is the location logo Button */
@@ -52,21 +56,21 @@
     align-items: center;
 }
 .searchText{
-    background-color: rgba(255, 242, 0, 0.838);
+    background-color: rgb(223, 211, 0);
     color: rgb(26, 26, 26);
     font-size: 18.9px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-right: 0;
     margin-left: 2rem;
-    outline: 3px solid rgb(255, 237, 122, 0.882);
+    outline: 3px solid rgb(223, 211, 0);
     flex: 2;
     padding: 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 .searchBar{
-    outline: 3px solid rgba(255, 237, 122, 0.882);
+    outline: 3px solid rgba(223, 211, 0);
     height: 37px;
     width: 100%;                /* For responsive designs use percentage */
     max-width: 2000px;
@@ -122,7 +126,7 @@
 
 .devButton{
     color: rgba(255, 255, 103, 0.918);
-    font-size:x-large;
+    font-size:24px;
     padding: 0;
     font-weight: bolder;
     margin-top: 20px;
@@ -131,19 +135,17 @@
     margin-left: 20px;
     margin-bottom: -5px;
     width: 230px;
-    min-width: 135px;
     transition: 0.4s ease;
 }
 .devButton:hover{
-    outline: 1px solid white;
-    box-shadow: 2px 2px 20px 2px rgba(255, 255, 255, 0.792);
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.414);
+
+    color: rgba(255, 255, 103, 0.918);
+    background-color: rgba(255, 255, 255, 0.166);
 }
 .devButton:active{
     transition: 0s;
     color: white;
-    background-color:transparent ;
+    background-color:rgba(2, 2, 2, 0.59) ;
 }
 
 .socialsDiv{
@@ -161,9 +163,9 @@
 .instaButton{
     padding: 0;
     background-color: transparent;
+    transition: 0.4s ease;
 }
-.instaButton:hover{
-    transition: 0.4s;
+.instaButton:hover{    
     transform: scale(1.2);
     box-shadow: 0 4px 6px rgba(252, 154, 255, 0.792);
 }
@@ -175,9 +177,9 @@
 .xButton{
     padding: 0;
     background-color: transparent;
+    transition: 0.4s ease;
 }
 .xButton:hover{
-    transition: 0.4s;
     transform: scale(1.2);
     box-shadow: 0 4px 6px rgba(239, 255, 116, 0.792);
 }
@@ -189,9 +191,9 @@
 .linkedinButton{
     padding: 0;
     background-color: transparent;
+    transition: 0.4s ease;
 }
 .linkedinButton:hover{
-    transition: 0.4s;
     transform: scale(1.2);
     box-shadow: 0 4px 6px rgba(128, 168, 255, 0.792);
 }
@@ -203,9 +205,9 @@
 .githubButton{
     padding: 0;
     background-color: transparent;
+    transition: 0.4s ease;
 }
 .githubButton:hover{
-    transition: 0.4s;
     transform: scale(1.2);
     box-shadow: 0 4px 6px rgba(255, 110, 110, 0.792);
 }

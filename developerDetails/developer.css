@@ -1,0 +1,286 @@
+body {
+  background-image: url("/picturesWebsite/background4.jpg");
+  background-size: cover;
+  background-position: 30%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    backdrop-filter: blur(3px);
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.544);
+    outline: 15px solid rgba(0, 0, 0, 0.625);
+    border-radius: 25px;
+    min-height: 80vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.7rem;
+  color: #000000d0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+
+
+.cardDhairya{
+    background-color: rgba(0, 251, 255, 0.462);
+    outline: 5px solid rgba(0, 88, 159, 0.182);
+    border-radius: 10px;
+    display:flex;
+    width: max-content;
+    height: fit-content;
+    flex-direction: row;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.375);
+    transition: 0.5s ease;
+}
+.cardDhairya:hover{
+    transform: scale(1.2);
+}
+
+.devPictureD {
+  margin-top: 10px;
+  outline: 2px solid rgba(0, 63, 84, 0.817);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.devPictureD:hover{
+  transform: scale(1.1);
+}
+
+.nameProfileD{
+    display: flex;
+    flex-direction: column;
+    padding-right:30px;
+    align-items: center;
+}
+.nameProfileD h2{
+    background-color: rgba(13, 13, 13, 0.705);
+    padding: 5px 20px 5px 20px ;
+    border-radius: 25px;
+    color: rgb(147, 250, 254);
+}
+.nameProfileD h3{
+    margin: 0;
+    padding: 5px;
+    font-weight: bolder;
+}
+.linksD{
+    background-color: rgba(255, 255, 255, 0.652);
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 45px;
+    border-radius: 5px;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.linksD:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
+}
+.linkItemD {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px; /* Adjust as needed */
+}
+
+.linkItemD span {
+  font-weight: bold;
+}
+
+.linkItemD a {
+  color: rgb(0, 68, 107);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.linkItemD a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: rgb(0, 124, 207);
+}
+
+
+.cardLavanya{
+    background-color: rgba(255, 0, 68, 0.462);
+    outline: 5px solid rgba(159, 0, 130, 0.182);
+    border-radius: 10px;
+    display:flex;
+    width: max-content;
+    height: fit-content;
+    flex-direction: row;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.375);
+    transition: 0.5s ease;
+}
+.cardLavanya:hover{
+    transform: scale(1.2);
+}
+
+.devPictureL {
+    margin-top: 10px;
+  outline: 2px solid rgba(84, 0, 63, 0.817);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.devPictureL:hover{
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
+  transform: scale(1.1);
+}
+.nameProfileL{
+    display: flex;
+    flex-direction: column;
+    padding-right:30px;
+    align-items: center;
+}
+.nameProfileL h2{
+    background-color: rgba(13, 13, 13, 0.705);
+    padding: 5px 20px 5px 20px ;
+    border-radius: 25px;
+    color: rgb(254, 147, 206);
+}
+.nameProfileL h3{
+    margin: 0;
+    padding: 5px;
+    font-weight: bolder;
+}
+.linksL{
+    background-color: rgba(255, 255, 255, 0.652);
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 45px;
+    border-radius: 5px;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.linksL:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
+}
+.linkItemL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px; /* Adjust as needed */
+}
+
+.linkItemL span {
+  font-weight: bold;
+}
+
+.linkItemL a {
+  color: rgb(105, 0, 107);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.linkItemL a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: rgb(207, 0, 166);
+}
+
+
+/* Responsive design for mobile phones */
+
+@media (max-width: 768px) {
+  .cardsWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .nameProfileD,
+  .nameProfileL {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .devPictureD,
+  .devPictureL {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .cardDhairya,
+  .cardLavanya {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .devPictureD,
+  .devPictureL {
+    width: 100px;
+    height: 100px;
+  }
+
+  .linksD,
+  .linksL {
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .linkItemD,
+  .linkItemL {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .nameProfileD h2,
+  .nameProfileL h2 {
+    font-size: 1.2rem;
+  }
+
+  .nameProfileD h3,
+  .nameProfileL h3 {
+    padding-bottom: 10px;
+    font-size: 1rem;
+  }
+}

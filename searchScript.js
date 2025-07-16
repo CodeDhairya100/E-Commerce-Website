@@ -2,9 +2,10 @@ const searchInput = document.querySelector('input.searchBar'); // tumhare input 
 const productDisplayArea = document.getElementById('productDisplayArea'); // product cards ka display area
 
 
-const categoryFiles = ["paintings","beauty-products","bestseller","computers",
-                       "electronics","fashion---clothing","furniture","gifting",
-                       "groceries","kitchen", "books","pharmacy"];
+const categoryFiles = ["paintings","3-d-models","clay-crafts","crafting-accessories",
+                       "crafts---decorations","crayon---pencils","gifting","markers---outliners",
+                       "painting-tools","paintings","paints---brushes","papers","posters",
+                       "sketches","stickers"];
 
                        
 searchInput.addEventListener('input', async function () {
