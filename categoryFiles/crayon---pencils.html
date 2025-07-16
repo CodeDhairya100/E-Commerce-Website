@@ -1,94 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Cards</title>
-    <link rel="stylesheet" href="card.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crayons & Pencils</title>
+  <link rel="stylesheet" href="../cssfiles/card.css">
 </head>
 <body>
 
 <div class="itemMenu">
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Pharmacy/P1.webp">
-        <h2>Whitecon Syrup</h2>
-        <h4>Company : UJWALA</h4>
-        <h4>Price : ₹280</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 1 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/crayons/CP1.webp" alt="Crayon Set 1">
+    <h2>Crayon Set 1</h2>
+    <h4>Company : Placeholder</h4>
+    <h4>Price : ₹149</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Pharmacy/P2.webp">
-        <h2>Elaichi Lactation</h2>
-        <h4>Company : Galact</h4>
-        <h4>Price : ₹390</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 2 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/crayons/CP2.webp" alt="Crayon Set 2">
+    <h2>Crayon Set 2</h2>
+    <h4>Company : Placeholder</h4>
+    <h4>Price : ₹189</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Pharmacy/P3.webp">
-        <h2>Anartava</h2>
-        <h4>Company : NAMAYA</h4>
-        <h4>Price : ₹239</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 3 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/crayons/CP3.webp" alt="Crayon Set 3">
+    <h2>Pencil Colours 1</h2>
+    <h4>Company : Placeholder</h4>
+    <h4>Price : ₹229</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
-    
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Pharmacy/P4.webp">
-        <h2>Jamun Powder</h2>
-        <h4>Company : KAYABoost</h4>
-        <h4>Price : ₹230</h4>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 4 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/crayons/CP4.webp" alt="Crayon Set 4">
+    <h2>Pencil Colours 2</h2>
+    <h4>Company : Placeholder</h4>
+    <h4>Price : ₹249</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Pharmacy/P5.webp">
-        <h2>Jamun Karela Juice</h2>
-        <h4>Company : Dabur</h4>
-        <h4>Price : ₹300</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 5 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/crayons/CP5.webp" alt="Crayon Set 5">
+    <h2>Sketch Pencils</h2>
+    <h4>Company : Placeholder</h4>
+    <h4>Price : ₹199</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 </div>
-<script src="cardScript.js"></script>
+
+<script src="../cardScript.js"></script>
 </body>
 </html>

@@ -1,94 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Cards</title>
-    <link rel="stylesheet" href="card.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Posters</title>
+  <link rel="stylesheet" href="../cssfiles/card.css">
 </head>
 <body>
 
 <div class="itemMenu">
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Furniture/F1.webp">
-        <h2>Wooden Book Shelves</h2>
-        <h4>Company : OnlineCraft</h4>
-        <h4>Price : ₹2,795</h4>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 1 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P1.jpeg" alt="Poster 1">
+    <h2>Work Hard Poster</h2>
+    <h4>Company : InspireArts</h4>
+    <h4>Price : ₹99</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Furniture/F2.webp">
-        <h2>Wood Drawer Bed</h2>
-        <h4>Company : Capella</h4>
-        <h4>Price : ₹14,999</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 2 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P2.jpeg" alt="Poster 2">
+    <h2>Hustle Poster</h2>
+    <h4>Company : PosterVerse</h4>
+    <h4>Price : ₹89</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Furniture/F3.webp">
-        <h2>Wood Shoe Table</h2>
-        <h4>Company : NE Furniture</h4>
-        <h4>Price : ₹1224</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 3 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P3.jpeg" alt="Poster 3">
+    <h2>Keep Going Poster</h2>
+    <h4>Company : Motiv8</h4>
+    <h4>Price : ₹109</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
-    
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Furniture/F4.webp">
-        <h2>Wooden LED Temple</h2>
-        <h4>Company : Old Wolf</h4>
-        <h4>Price : ₹9,494</h4>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 4 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P4.jpeg" alt="Poster 4">
+    <h2>Dream Big Poster</h2>
+    <h4>Company : SkyPrint</h4>
+    <h4>Price : ₹129</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Furniture/F5.webp">
-        <h2>4 Door Wardrobe</h2>
-        <h4>Company : Julian</h4>
-        <h4>Price : ₹13,600</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 5 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P5.jpeg" alt="Poster 5">
+    <h2>Believe Poster</h2>
+    <h4>Company : Positivitea</h4>
+    <h4>Price : ₹119</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/P6.jpg" alt="Poster 6">
+    <h2>Success Mindset Poster</h2>
+    <h4>Company : Mindspace</h4>
+    <h4>Price : ₹139</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
+    </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="itemCard">
+    <img class="itemImg" src="../picturesCards/posters/p7.jpeg" alt="Poster 7">
+    <h2>Minimal Dot Poster</h2>
+    <h4>Company : Artx</h4>
+    <h4>Price : ₹149</h4>
+    <div class="quantityBox">
+      <h4>Quantity:</h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
+    </div>
+    <button class="addToCart">Add to Cart</button>
+  </div>
 </div>
-<script src="cardScript.js"></script>
+
+<script src="../cardScript.js"></script>
 </body>
 </html>
