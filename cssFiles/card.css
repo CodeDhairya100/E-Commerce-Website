@@ -14,9 +14,9 @@
     max-width: 18rem;
     height: 21.9rem;
     min-height: 20.4rem;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(2px);                 /* For Safari */
-    background-color: rgba(255, 243, 110, 0.32);     /* Translucent background */
+    background-color: rgba(255, 245, 138, 0.32);     /* Translucent background */
     border-radius: 10px;
     outline: 2px solid rgba(74, 68, 20, 0.06);
     display: flex;

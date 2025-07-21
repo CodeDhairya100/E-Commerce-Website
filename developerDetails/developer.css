@@ -8,23 +8,26 @@ body {
 }
 
 .container {
-    backdrop-filter: blur(3px);
-    margin: 2rem;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.544);
-    outline: 15px solid rgba(0, 0, 0, 0.625);
-    border-radius: 25px;
-    min-height: 80vh; /* full viewport height */
-    display: flex;
-    flex-direction: column;
+  backdrop-filter: blur(3px);
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.544);
+  outline: 15px solid rgba(0, 0, 0, 0.625);
+  border-radius: 25px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
+
+/*---Div Container of All the Cards---*/
+
 .cardsWrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .container h1 {
@@ -40,173 +43,180 @@ body {
   padding-bottom: 10px;
 }
 
-
-
-.cardDhairya{
-    background-color: rgba(0, 251, 255, 0.462);
-    outline: 5px solid rgba(0, 88, 159, 0.182);
-    border-radius: 10px;
-    display:flex;
-    width: max-content;
-    height: fit-content;
-    flex-direction: row;
-    padding: 10px;
-    margin: auto;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.375);
-    transition: 0.5s ease;
-}
-.cardDhairya:hover{
-    transform: scale(1.2);
+.card-container {
+  width: 450px;
+  height: 270px;
+  perspective: 1000px;
+  transition: transform 0.4s ease-in-out;
 }
 
-.devPictureD {
+.card-container:hover {
+  transform: scale(1.08);
+}
+
+
+/*---Defining the size of the Cards---*/
+
+.cardDhairya, .cardLavanya {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/*---Flip Logic for the Cards on their <div> Card-Container </div> ---*/
+
+.card-container.flipped .cardDhairya,
+.card-container.flipped .cardLavanya {
+  transform: rotateY(180deg);
+}
+
+
+
+/*---Structure of the Front and Back of the Cards---*/
+
+.frontD, .backD,
+.frontL, .backL {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.375);
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.backD, .backL {
+  transform: rotateY(180deg);
+}
+
+
+/*---Color for Dhairya's Card---*/
+
+.frontD {
+  background-color: rgba(0, 251, 255, 0.462);
+  outline: 5px solid rgba(0, 88, 159, 0.182);
+}
+
+.backD {
+  background-color: rgba(0, 251, 255, 0.2);
+  color: white;
+}
+
+
+/*---Color for Lavanya's Card---*/
+
+.frontL {
+  background-color: rgba(255, 0, 68, 0.462);
+  outline: 5px solid rgba(159, 0, 130, 0.182);
+}
+
+.backL {
+  background-color: rgba(255, 0, 68, 0.2);
+  color: white;
+}
+
+
+
+/*---Adjusting the inner Card Elements---*/
+
+.devPictureD, .devPictureL {
   margin-top: 10px;
-  outline: 2px solid rgba(0, 63, 84, 0.817);
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   transition: 0.3s ease;
 }
-.devPictureD:hover{
+
+.devPictureD {
+  outline: 2px solid rgba(0, 63, 84, 0.817);
+}
+
+.devPictureL {
+  outline: 2px solid rgba(84, 0, 63, 0.817);
+}
+
+.devPictureD:hover, .devPictureL:hover {
   transform: scale(1.1);
 }
 
-.nameProfileD{
-    display: flex;
-    flex-direction: column;
-    padding-right:30px;
-    align-items: center;
+.nameProfileD, .nameProfileL {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  align-items: center;
 }
-.nameProfileD h2{
-    background-color: rgba(13, 13, 13, 0.705);
-    padding: 5px 20px 5px 20px ;
-    border-radius: 25px;
-    color: rgb(147, 250, 254);
+
+.nameProfileD h2, .nameProfileL h2 {
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: rgba(13, 13, 13, 0.705);
 }
-.nameProfileD h3{
-    margin: 0;
-    padding: 5px;
-    font-weight: bolder;
+
+.nameProfileD h2 {
+  color: rgb(147, 250, 254);
 }
-.linksD{
-    background-color: rgba(255, 255, 255, 0.652);
-    margin: auto;
-    display: flex;
-    padding: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    gap: 45px;
-    border-radius: 5px;
-    flex-direction: column;
-    transition: 0.5s ease;
+
+.nameProfileL h2 {
+  color: rgb(254, 147, 206);
 }
-.linksD:hover{
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
+
+.nameProfileD h3, .nameProfileL h3 {
+  margin: 0;
+  padding: 5px;
+  font-weight: bolder;
 }
-.linkItemD {
+
+.linksD, .linksL {
+  background-color: rgba(255, 255, 255, 0.652);
+  margin: auto;
+  display: flex;
+  padding: 25px 15px;
+  gap: 45px;
+  border-radius: 5px;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.linksD:hover, .linksL:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
+}
+
+.linkItemD, .linkItemL {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 140px; /* Adjust as needed */
+  width: 140px;
 }
 
-.linkItemD span {
+.linkItemD span, .linkItemL span {
   font-weight: bold;
+}
+
+.linkItemD a, .linkItemL a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .linkItemD a {
   color: rgb(0, 68, 107);
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
+}
+
+.linkItemL a {
+  color: rgb(105, 0, 107);
 }
 
 .linkItemD a:hover {
   transform: scale(1.1);
   text-decoration: underline;
   color: rgb(0, 124, 207);
-}
-
-
-.cardLavanya{
-    background-color: rgba(255, 0, 68, 0.462);
-    outline: 5px solid rgba(159, 0, 130, 0.182);
-    border-radius: 10px;
-    display:flex;
-    width: max-content;
-    height: fit-content;
-    flex-direction: row;
-    padding: 10px;
-    margin: auto;
-    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.375);
-    transition: 0.5s ease;
-}
-.cardLavanya:hover{
-    transform: scale(1.2);
-}
-
-.devPictureL {
-    margin-top: 10px;
-  outline: 2px solid rgba(84, 0, 63, 0.817);
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: 0.3s ease;
-}
-.devPictureL:hover{
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
-  transform: scale(1.1);
-}
-.nameProfileL{
-    display: flex;
-    flex-direction: column;
-    padding-right:30px;
-    align-items: center;
-}
-.nameProfileL h2{
-    background-color: rgba(13, 13, 13, 0.705);
-    padding: 5px 20px 5px 20px ;
-    border-radius: 25px;
-    color: rgb(254, 147, 206);
-}
-.nameProfileL h3{
-    margin: 0;
-    padding: 5px;
-    font-weight: bolder;
-}
-.linksL{
-    background-color: rgba(255, 255, 255, 0.652);
-    margin: auto;
-    display: flex;
-    padding: 15px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    gap: 45px;
-    border-radius: 5px;
-    flex-direction: column;
-    transition: 0.5s ease;
-}
-.linksL:hover{
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.172);
-}
-.linkItemL {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 140px; /* Adjust as needed */
-}
-
-.linkItemL span {
-  font-weight: bold;
-}
-
-.linkItemL a {
-  color: rgb(105, 0, 107);
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
 }
 
 .linkItemL a:hover {
@@ -216,7 +226,7 @@ body {
 }
 
 
-/* Responsive design for mobile phones */
+/*---Responsive Command for Mobile View---*/
 
 @media (max-width: 768px) {
   .cardsWrapper {
@@ -224,7 +234,7 @@ body {
     align-items: center;
   }
 
-    .nameProfileD,
+  .nameProfileD,
   .nameProfileL {
     align-items: center;
     justify-content: center;
@@ -232,20 +242,15 @@ body {
 
   .devPictureD,
   .devPictureL {
-    display: block;
     margin: 0 auto 10px auto;
+    width: 100px;
+    height: 100px;
   }
 
   .cardDhairya,
   .cardLavanya {
     flex-direction: column;
     width: 90%;
-  }
-
-  .devPictureD,
-  .devPictureL {
-    width: 100px;
-    height: 100px;
   }
 
   .linksD,

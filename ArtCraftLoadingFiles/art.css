@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background: transparent; /* ya image/gradient */
+  z-index: 9999;  /* Sabse upar */
+  border: 140px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* ---- Main Container ---- */
+.animatedBorder {
+  height: 410px;
+  width: 1150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.animatedBorder::before {
+  content: "";
+  position: absolute;
+  height: 360%;
+  width: 150%;
+  background: conic-gradient(#ffd000 0deg, transparent 120deg);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.animatedBorder::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+}
+
+/* ---- Text Styling ---- */
+.text-ground {
+  background-image: url(../picturesWebsite/background2.jpg);
+  background-size: cover;
+  background-position: 20% 20%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  white-space: nowrap;
+  animation: pop 1s ease-in-out forwards;
+}
+
+/* ---- Animations ---- */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  90%{
+    font-size: 420px;
+  }
+  92%{
+    font-size: 400px;
+  }
+  94%{
+    font-size: 410px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 400px;
+  }
+}

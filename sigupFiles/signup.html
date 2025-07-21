@@ -10,10 +10,11 @@
   <div class="container">
     <!-- Login Form -->
     <div class="form-box active" id="login-form">
-      <form onsubmit="event.preventDefault(); alert('Login functionality not implemented yet.');">
+      <form onsubmit="event.preventDefault(); window.location.href = '../app.html';">
         <h2>Login</h2>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
+        <a href="../app.html"></a>
         <button type="submit" name="login">Login</button>
         <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
       </form>
@@ -32,42 +33,6 @@
     </div>
   </div>
 
-  <script>
-    // Switch form view
-    function showForm(formId) {
-      document.querySelectorAll(".form-box").forEach(box => box.classList.remove("active"));
-      document.getElementById(formId).classList.add("active");
-    }
-
-    // Register form submission
-    function registerUser(e) {
-      e.preventDefault();
-
-      const name = document.querySelector('#register-form input[name="name"]').value;
-      const email = document.querySelector('#register-form input[name="email"]').value;
-      const password = document.querySelector('#register-form input[name="password"]').value;
-
-      fetch("https://script.google.com/macros/s/AKfycbwaJPv5V1_sw3KRJdbiWwkoXqXK173yNGs2z2_rQu7_lupBl4G7C9TU2e94SiRoUBGSoA/exec", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          password: password
-        })
-      })
-      .then(res => res.text())
-      .then(msg => {
-        alert(msg);
-        e.target.reset();
-        showForm('login-form');
-      })
-      .catch(err => {
-        alert("Error: " + err);
-      });
-    }
-  </script>
+  <script src="signupScript.js"></script>
 </body>
 </html>
