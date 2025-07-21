@@ -1,110 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Cards</title>
-    <link rel="stylesheet" href="card.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cards</title>
+  <link rel="stylesheet" href="card.css">
 </head>
 <body>
 
 <div class="itemMenu">
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting1.JPG">
-        <h2>Camping Nights</h2>
-        <h4>Category :Acryllic Painting</h4>
-        <h4>Price : ₹4,499</h4>
-        <h4>Type : Scenery</h4>
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+
+  <!-- Card 1 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting1.JPG" alt="Camping Nights">
+    <h2>Camping Nights</h2>
+    <h4>Category : Acryllic Painting</h4>
+    <h4>Price : ₹4,499</h4>
+    <h4>Type : Scenery</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
+    <button class="add-to-cart"
+            data-name="Camping Nights"
+            data-price="4499"
+            data-image="picturesCards/paintings/painting1.JPG">
+      Add to Cart
+    </button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting2.JPG">
-        <h2>Solar Pyramid</h2>
-        <h4>Category :Acryllic Painting</h4>
-        <h4>Price : ₹2,499</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 2 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting2.JPG" alt="Solar Pyramid">
+    <h2>Solar Pyramid</h2>
+    <h4>Category : Acryllic Painting</h4>
+    <h4>Price : ₹2,499</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
+    <button class="add-to-cart"
+            data-name="Solar Pyramid"
+            data-price="2499"
+            data-image="picturesCards/paintings/painting2.JPG">
+      Add to Cart
+    </button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting3.JPG">
-        <h2>Memories</h2>
-        <h4>Category :CANVAS Painting</h4>
-        <h4>Price : ₹4,000</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 3 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting3.JPG" alt="Memories">
+    <h2>Memories</h2>
+    <h4>Category : Canvas Painting</h4>
+    <h4>Price : ₹4,000</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
-    
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting5.JPG">
-        <h2>The Village Edge</h2>
-        <h4>Category :Poster Painting</h4>
-        <h4>Price : ₹1,499</h4>
+    <button class="add-to-cart"
+            data-name="Memories"
+            data-price="4000"
+            data-image="picturesCards/paintings/painting3.JPG">
+      Add to Cart
+    </button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 4 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting5.JPG" alt="The Village Edge">
+    <h2>The Village Edge</h2>
+    <h4>Category : Poster Painting</h4>
+    <h4>Price : ₹1,499</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
+    <button class="add-to-cart"
+            data-name="The Village Edge"
+            data-price="1499"
+            data-image="picturesCards/paintings/painting5.JPG">
+      Add to Cart
+    </button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting6.JPG">
-        <h2>The Temple</h2>
-        <h4>Category :Poster Painting</h4>
-        <h4>Price : ₹999</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 5 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting6.JPG" alt="The Temple">
+    <h2>The Temple</h2>
+    <h4>Category : Poster Painting</h4>
+    <h4>Price : ₹999</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
+    <button class="add-to-cart"
+            data-name="The Temple"
+            data-price="999"
+            data-image="picturesCards/paintings/painting6.JPG">
+      Add to Cart
+    </button>
+  </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/paintings/painting7.JPG">
-        <h2>Vibrant SHADE</h2>
-        <h4>Category :Acryllic Painting</h4>
-        <h4>Price : ₹499</h4>
-
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- Card 6 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/paintings/painting7.JPG" alt="Vibrant Shade">
+    <h2>Vibrant SHADE</h2>
+    <h4>Category : Acryllic Painting</h4>
+    <h4>Price : ₹499</h4>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn">−</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn">+</button>
     </div>
+    <button class="add-to-cart"
+            data-name="Vibrant SHADE"
+            data-price="499"
+            data-image="picturesCards/paintings/painting7.JPG">
+      Add to Cart
+    </button>
+  </div>
 </div>
+
 <script src="cardScript.js"></script>
 </body>
 </html>

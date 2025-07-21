@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart Page</title>
+  <script defer src="cart.js"></script>
+</head>
+<body>
+
+  <h1>Your Shopping Cart</h1>
+
+  <!-- Cart Items Table -->
+  <div id="cart-container">
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Items inserted by cart.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Summary & Checkout -->
+  <div id="summary-section">
+    <p><strong>Total Items:</strong> <span id="total-items">0</span></p>
+    <p><strong>Total Price:</strong> ₹<span id="total-price">0.00</span></p>
+    <button id="checkout-button">Proceed to Checkout</button>
+  </div>
+
+</body>
+</html>

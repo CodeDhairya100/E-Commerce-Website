@@ -1,120 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="cssFiles/header.css">
     <link rel="stylesheet" href="cssFiles/header2.css">
     <link rel="stylesheet" href="cssFiles/footer.css">
     <link rel="stylesheet" href="cssFiles/card.css">
+    <link rel="stylesheet" href="cssFiles/cart.css">
 </head>
 <body style="padding-top: 122px; margin: 0;">
+    <!-- Header -->
+
     <div class="header">
-
-        <div>
-            <img  class="logo" src="picturesWebsite/logoShop.png">
-        </div>
-
+        <div><img class="logo" src="picturesWebsite/logoShop.png"></div>
         <div class="Location">
-            <button  class="locationButton" >
+            <button class="locationButton">
                 <img class="locationPicture" src="picturesWebsite/pointerlocation.png">
                 <div style="color: rgb(254, 254, 254);"> Location </div>
             </button>
         </div>
-
         <div class="search">
-            <label class="searchText for="placeholder">Search</label>
+            <label class="searchText" for="placeholder">Search</label>
             <input class="searchBar" type="text" placeholder=" Search Products">
         </div>
-
         <div class="account">
             <button class="accountButton">
-                <img  class="accountPicture" src="picturesWebsite/human.png">
+                <img class="accountPicture" src="picturesWebsite/human.png">
                 <div style="color: black;">Account</div>
             </button>
         </div>
-
-        <div class="developerSection">3
+        <div class="developerSection">
             <button class="devButton">D E V E L O P E R S</button>
             <div class="socialsDiv">
-            <button class="instaButton">
-                <img class="Image" src="picturesWebsite/instagram.png">
-            </button>
-            <button class="xButton">
-                <img class="Image" src="picturesWebsite/x.png">
-            </button>
-            <button class="linkedinButton">
-                <img class="Image" src="picturesWebsite/linkedin.png">
-            </button>
-            <button class="githubButton">
-                <img class="Image" src="picturesWebsite/github.png">
-            </button>
+                <button class="instaButton"><img class="Image" src="picturesWebsite/instagram.png"></button>
+                <button class="xButton"><img class="Image" src="picturesWebsite/x.png"></button>
+                <button class="linkedinButton"><img class="Image" src="picturesWebsite/linkedin.png"></button>
+                <button class="githubButton"><img class="Image" src="picturesWebsite/github.png"></button>
             </div>
         </div>
-
         <div class="rightCart">
-            <button class="cartButton">
-                <img class="cartImage" src="picturesWebsite/cart.png">
-            </button>
+            <a href="cart.html">
+                <button class="cartButton">
+                    <img class="cartImage" src="picturesWebsite/cart.png">
+                </button>
+            </a>
         </div>
-
     </div>
-    
+
+    <!-- Category Buttons -->
     <div class="header2-wrapper">
         <button class="allButton">
-            <img class="allButtonIcon" src="picturesWebsite/bars.png" >
+            <img class="allButtonIcon" src="picturesWebsite/bars.png">
             <div class="allWord">All</div>
         </button>
         <button id="left-arrow" class="arrow">◀</button>
         <div class="header2">
-            <button class="itemsButton">Paintings</button>
-            <button class="itemsButton">Sketches</button>
-            <button class="itemsButton">Painting Tools</button>
-            <button class="itemsButton">3-D Models</button>
-            <button class="itemsButton">Clay Crafts</button>
-            <button class="itemsButton">Stickers</button>
-            <button class="itemsButton">Posters</button>
-            <button class="itemsButton">Papers</button>
-            <button class="itemsButton">Markers & Outliners</button>
-            <button class="itemsButton">Crayon & Pencils</button>
-            <button class="itemsButton">Crafting Accessories</button>
-            <button class="itemsButton">Gifting</button>
-            <button class="itemsButton">Crafts & Decorations</button>
+            <button class="itemsButton" data-category="paintings">Paintings</button>
+            <button class="itemsButton" data-category="sketches">Sketches</button>
+            <button class="itemsButton" data-category="painting-tools">Painting Tools</button>
+            <button class="itemsButton" data-category="3-d-models">3-D Models</button>
+            <button class="itemsButton" data-category="clay-crafts">Clay Crafts</button>
+            <button class="itemsButton" data-category="stickers">Stickers</button>
+            <button class="itemsButton" data-category="posters">Posters</button>
+            <button class="itemsButton" data-category="papers">Papers</button>
+            <button class="itemsButton" data-category="markers-outliners">Markers & Outliners</button>
+            <button class="itemsButton" data-category="crayon-pencils">Crayon & Pencils</button>
+            <button class="itemsButton" data-category="crafting-accessories">Crafting Accessories</button>
+            <button class="itemsButton" data-category="gifting">Gifting</button>
+            <button class="itemsButton" data-category="crafts-decorations">Crafts & Decorations</button>
         </div>
         <button id="right-arrow" class="arrow">▶</button>
     </div>
 
-    <div class="header3">
-        <span>READY TO BUY</span>
-    </div>
+    <div class="header3"><span>READY TO BUY</span></div>
 
+    <!-- Product Display Area -->
     <div id="productDisplayArea">
         <section class="kidsMenWomenDiv">
-            <div>
-                <button class="art">ART</button>
-            </div>
-            <div>
-                <button class="craft">CRAFT</button>
-            </div>
-            <div>
-                <button class="shop">Shop</button>
-            </div>
+            <div><button class="art">ART</button></div>
+            <div><button class="craft">CRAFT</button></div>
+            <div><button class="shop">Shop</button></div>
         </section>
     </div>
 
-
-
-    
+    <!-- Footer -->
     <footer>
-
-        <!-- Back to Top Panel -->
-
-        <div class="footer-panel1">
-            <a href="#top">Back To Top</a>
-        </div>
-
-        <!-- Footer Content Columns -->
-
+        <div class="footer-panel1"><a href="#top">Back To Top</a></div>
         <div class="footer-panel2">
             <div class="footer-column">
                 <h3>Get to Know Us</h3>
@@ -146,29 +120,23 @@
                 <a href="#">Help</a>
             </div>
         </div>
-
-        <!-- Logo Panel -->
         <div class="footer-logo-panel">
             <img src="picturesWebsite/logoShop.png" alt="ShopCart Logo" class="footer-logo-img">
         </div>
-
-        <!-- Footer Legal Links -->
         <div class="footer-panel3">
             <a href="#">Conditions of Use</a>
             <a href="#">Privacy Notice</a>
             <a href="#">Your Ads Privacy Choices</a>
         </div>
-
-        <!-- Copyright -->
         <div class="footer-panel4">
-            2020-2025 ShopCart.com, Copyright © Dhairya & Lavanya.
+            2020-2025 ShopCart.com, Copyright © Dhairya
         </div>
     </footer>
 
-    <script src="header2Script.js"></script>
-    <script src="loadProducts.js"></script>
-    <script src="cardScript.js"></script>
-    <script src="searchScript.js"></script>
-
+    <!-- Scripts -->
+        <script src="header2Script.js"></script>
+        <script src="loadProducts.js"></script>
+        <script src="cardScript.js"></script>
+        <script src="searchScript.js"></script>
 </body>
 </html>

@@ -7,88 +7,119 @@
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
-
 <div class="itemMenu">
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Gifting/G1.webp">
-        <h2>Gift Set</h2>
-        <h4>Company : PRIDE STORE</h4>
-        <h4>Price : ₹341</h4>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 1 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/Gifting/G1.webp" alt="Gift Set">
+    <h2>Gift Set</h2>
+    <h4>Company : PRIDE STORE</h4>
+    <h4>Price : ₹341</h4>
+
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Gifting/G2.webp">
-        <h2>Showpiece Gift Set</h2>
-        <h4>Company : SmartBuy</h4>
-        <h4>Price : ₹158</h4>
+    <button class="add-to-cart"
+            data-name="Gift Set"
+            data-price="341"
+            data-image="picturesCards/Gifting/G1.webp">
+      Add to Cart
+    </button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 2 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/Gifting/G2.webp" alt="Showpiece Gift Set">
+    <h2>Showpiece Gift Set</h2>
+    <h4>Company : SmartBuy</h4>
+    <h4>Price : ₹158</h4>
+
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Gifting/G3.webp">
-        <h2>Snow Globe Gift</h2>
-        <h4>Company : Tied Ribbons</h4>
-        <h4>Price : ₹439</h4>
+    <button class="add-to-cart"
+            data-name="Showpiece Gift Set - SmartBuy"
+            data-price="158"
+            data-image="picturesCards/Gifting/G2.webp">
+      Add to Cart
+    </button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
-    </div>
-    
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Gifting/G4.webp">
-        <h2>Greeting Card Gift Set</h2>
-        <h4>Company : Gift BY Passion</h4>
-        <h4>Price : ₹328</h4>
+  <!-- CARD 3 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/Gifting/G3.webp" alt="Snow Globe Gift">
+    <h2>Snow Globe Gift</h2>
+    <h4>Company : Tied Ribbons</h4>
+    <h4>Price : ₹439</h4>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
 
-    <div class="itemCard">
-        <img class="itemImg" src="picturesCards/Gifting/G5.webp">
-        <h2>Showpiece Gift Set</h2>
-        <h4>Company : KLLTIE</h4>
-        <h4>Price : ₹350</h4>
+    <button class="add-to-cart"
+            data-name="Snow Globe Gift"
+            data-price="439"
+            data-image="picturesCards/Gifting/G3.webp">
+      Add to Cart
+    </button>
+  </div>
 
-        <div class="quantityBox">
-            <h4>Quantity : </h4>
-            <button class="qty-btn" onclick="decreaseQty(this)">-</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn" onclick="increaseQty(this)">+</button>
-        </div>
-        
-        <button class="addToCart">Add to Cart</button>
+  <!-- CARD 4 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/Gifting/G4.webp" alt="Greeting Card Gift Set">
+    <h2>Greeting Card Gift Set</h2>
+    <h4>Company : Gift BY Passion</h4>
+    <h4>Price : ₹328</h4>
+
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
     </div>
+
+    <button class="add-to-cart"
+            data-name="Greeting Card Gift Set"
+            data-price="328"
+            data-image="picturesCards/Gifting/G4.webp">
+      Add to Cart
+    </button>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="itemCard">
+    <img class="itemImg" src="picturesCards/Gifting/G5.webp" alt="Showpiece Gift Set 2">
+    <h2>Showpiece Gift Set</h2>
+    <h4>Company : KLLTIE</h4>
+    <h4>Price : ₹350</h4>
+
+    <div class="quantityBox">
+      <h4>Quantity : </h4>
+      <button class="qty-btn" onclick="decreaseQty(this)">-</button>
+      <span class="qty-value">1</span>
+      <button class="qty-btn" onclick="increaseQty(this)">+</button>
+    </div>
+
+    <button class="add-to-cart"
+            data-name="Showpiece Gift Set - KLLTIE"
+            data-price="350"
+            data-image="picturesCards/Gifting/G5.webp">
+      Add to Cart
+    </button>
+  </div>
 </div>
+
 <script src="cardScript.js"></script>
 </body>
 </html>
