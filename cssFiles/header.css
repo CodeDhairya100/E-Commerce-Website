@@ -93,10 +93,6 @@
     transition: 0.2s;
     opacity: 0.6;
 }
-.accountButton:active{
-    transition: 0ms;
-    background-color: rgba(151, 226, 255, 0.777);
-}
 .accountPicture{
     width: 40px;
 }
