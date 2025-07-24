@@ -19,10 +19,11 @@
     padding-top: 7px;
     margin-top: -25px;
     margin-bottom: -35px;
-    transition: 0.3s ease;    
+    transition: 0.3s ease;   
+    opacity: 0.8; 
 } 
 .logo:hover{
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -32,17 +33,38 @@
 }
 .locationButton{
     background-color: transparent;
+    transition: 0.3s ease;
 }
 .locationButton:hover {
-    transition: 0.25s;
-    outline: 1px solid white;
-    box-shadow: inset 0 0 5px 2px white;
-}
-.locationButton:active {
-    background-color: rgb(171, 171, 171);
+    background-color: #3d3d3d;
 }
 .locationPicture{
     width: 40px;
+}
+/* Tooltip for Location */
+.locationButton {
+  position: relative;
+  cursor: pointer;
+}
+
+.location-tooltip {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #ffffc5; /* dark theme background */
+  color: #010101;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.locationButton:hover .location-tooltip {
+  display: block;
 }
 
 
@@ -212,3 +234,34 @@
     opacity: 0.5;
 }
 
+
+
+/*-----------Tool-Tips for Elements-----------*/
+
+/* Tooltip Styling */
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -120%);
+  top: 0;
+  left: 50%;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+}

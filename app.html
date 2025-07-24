@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>ArtCart</title>
     <link rel="stylesheet" href="app.css">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="cssFiles/footer.css">
     <link rel="stylesheet" href="cssFiles/card.css">
 </head>
+
 <body style="padding-top: 122px; margin: 0;">
     <div class="header">
 
@@ -16,10 +18,13 @@
         </div>
 
         <div class="Location">
-            <button  class="locationButton" >
-                <img class="locationPicture" src="picturesWebsite/pointerlocation.png">
-                <div style="color: rgb(254, 254, 254);"> Location </div>
-            </button>
+            <a href="/locationFiles/location.html">
+                <button  class="locationButton" >
+                    <img class="locationPicture" src="picturesWebsite/pointerlocation.png">
+                    <div style="color: rgb(254, 254, 254);"> Location </div>
+                </button>
+            </a>
+
         </div>
 
         <div class="search">
@@ -42,22 +47,22 @@
             </a>
             <div class="socialsDiv">
                 <a href="/developerDetails/developer.html">
-                    <button class="instaButton">
+                    <button class="instaButton" data-tooltip="Instagram">
                         <img class="Image" src="picturesWebsite/instagram.png">
                     </button>
                 </a>
                 <a href="/developerDetails/developer.html">
-                    <button class="xButton">
+                    <button class="xButton" data-tooltip="Twitter(X)">
                         <img class="Image" src="picturesWebsite/x.png">
                     </button>            
                 </a>
                 <a href="/developerDetails/developer.html">
-                    <button class="linkedinButton">
+                    <button class="linkedinButton" data-tooltip="LinkedIn">
                         <img class="Image" src="picturesWebsite/linkedin.png">
                     </button>            
                 </a>
                 <a href="/developerDetails/developer.html">
-                    <button class="githubButton">
+                    <button class="githubButton" data-tooltip="GitHub">
                         <img class="Image" src="picturesWebsite/github.png">
                     </button>            
                 </a>
@@ -137,15 +142,15 @@
         <div class="footer-panel2">
             <div class="footer-column">
                 <h3>Get to Know Us</h3>
-                <a href="#">About ArtCart</a>
-                <a href="#">Careers</a>
+                <a href="/CopyRights_&_Claims /aboutArtCart.html">About ArtCart</a>
+                <a href="/CopyRights_&_Claims /copyright.html">Copyright & Claims</a>
                 <a href="#">Press Releases</a>
-                <a href="#">ArtCart Developer</a>
+                <a href="developerDetails/developer.html">ArtCart Developer</a>
             </div>
             <div class="footer-column">
                 <h3>Connect with Us</h3>
                 <a href="developerDetails/developer.html">LinkedIn</a>
-                <a href="developerDetails/developer.html">GitHub</a>
+                <a href="developerDetails/developer.html">Meta</a>
                 <a href="developerDetails/developer.html">Instagram</a>
             </div>
             <div class="footer-column">
@@ -190,6 +195,8 @@
     <script src="loadProducts.js"></script>
     <script src="cardScript.js" defer></script>
     <script src="searchScript.js"></script>
+    <script src="/TooltipsScripts/locationTooltip.js"></script>
+    <script src="/TooltipsScripts/HeaderTooltips.js"></script>
 
 </body>
 </html>

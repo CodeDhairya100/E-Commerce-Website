@@ -1,0 +1,247 @@
+*{
+    padding:0;
+}
+
+body{
+    background-image: url(/picturesWebsite/backgroundLight.jpg);
+    background-position: 20% 20%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*-----------This is the form Div---------*/
+.location{
+    display: flex;
+    backdrop-filter: blur(4px);
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.672);
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: scale(0.9);
+    transition: 0.5s ease;
+}
+.location:hover{
+    transform: scale(1);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.713);
+}
+.location h2{
+    
+}
+
+form input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: medium;
+}
+form input:focus, select:focus {
+  border: 2px solid #3f3f3f;
+  box-shadow: 0 0 5px #3f3f3f;
+  outline: none;
+}
+
+
+
+/*-------Heading and Theme Changer---------*/
+.heading{
+    display: flex;
+    gap: 430px;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading button{
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+/*----Theme Changer----*/
+
+.themeChanger {
+  --size: 80px;
+}
+
+.themeChanger input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: var(--size);
+  height: calc(var(--size) / 2);
+  background-color: #fff;
+  border: 3px solid #222;
+  border-radius: 30px 100px 100px 100px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.themeChanger input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: calc(var(--size) / 2);
+  height: calc(var(--size) / 2);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0.7);
+  border: 3px solid #222;
+  border-radius: 30px 100px 100px 100px;
+  background-color: #40e0e2;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+.themeChanger input[type="checkbox"]:checked {
+  background-color: #434343;
+  border-radius: 100px 100px 30px 100px;
+}
+
+.themeChanger input[type="checkbox"]:checked::before {
+  left: 50%;
+  background-color: #e4d722;
+  border-radius: 100px 100px 30px 100px;
+}
+
+
+
+/*----------This is the name--------------*/
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+/*-----------This is the City and Postal Code-----------*/
+.state-container{
+    display: flex;
+    gap: 10px;
+}
+
+/*---------------------Save Button--------------------*/
+.save{
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+.save:hover{
+    background-color: rgb(201, 240, 255);
+}
+
+
+
+
+
+/*============ D A R K     T H E M E =============*/
+
+.dark-theme {
+  background-image: url(/picturesWebsite/backgroundDark.jpg); 
+  color: white;
+}
+
+.dark-theme .location {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+.dark-theme .location:hover{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.856);
+}
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea {
+  background-color: #444;
+  color: rgb(255, 255, 255);
+  border: 1px solid #a5a5a5;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+  color: #ccc;
+}
+
+
+.dark-theme .save{
+    border: none;
+    outline: 2px solid black;
+    background-color: #2d2d2d;
+    color: rgb(255, 255, 255);
+}
+.dark-theme .save:hover {
+  background-color: #fff756bc;
+  color: rgb(0, 0, 0);
+}
+
+
+/* View Button - Dark Theme */
+.dark-theme .view-address-btn {
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+}
+.dark-theme .view-address-btn:hover {
+  background-color: #a3a3a3;
+}
+
+/* Delete Button - Dark Theme */
+.dark-theme .delete-address-btn {
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+}
+.dark-theme .delete-address-btn:hover {
+  background-color: #e53935;
+}
+
+
+
+/*=========== ADDRESS SAVING BUTTON ===========*/
+
+
+/*---View Address Button---*/
+.view-address-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+.view-address-btn:hover {
+  background-color: #5c5c5c;
+}
+
+/*----Delete address Button-----*/
+.delete-address-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 190px;
+  padding: 12px 18px;
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+.delete-address-btn:hover {
+  background-color: #d42323;
+}
+
